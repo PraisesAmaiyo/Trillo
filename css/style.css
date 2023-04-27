@@ -508,12 +508,10 @@ body {
 .user-nav_user {
   transition: all .1s; }
 
-.user-nav_user:hover,
-.popup_pop {
+.user-nav_user:hover {
   opacity: 1;
-  background-color: red; }
-  .user-nav_user:hover .popup_pop,
-  .popup_pop .popup_pop {
+  background-color: blue; }
+  .user-nav_user:hover .popup_pop {
     opacity: 1; }
 
 .popup_pop {
