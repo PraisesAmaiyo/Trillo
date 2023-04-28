@@ -505,16 +505,161 @@ body {
     outline: none;
     animation: pulsate 1s infinite; }
 
+header {
+  position: relative; }
+
+.user-nav > .user-nav_icon-box:hover *.show-popup_messages {
+  display: block;
+  top: 100%;
+  right: -200%;
+  transition: all .6s;
+  opacity: 1;
+  visibility: visible; }
+
+.show-popup_messages {
+  visibility: hidden;
+  opacity: 0;
+  color: var(--color-grey-light-1);
+  width: max-content;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: var(--color-grey-dark-1);
+  position: absolute;
+  top: 90%;
+  right: -220%;
+  z-index: 1000;
+  cursor: default;
+  box-shadow: var(--shadow-dark); }
+  .show-popup_messages_user {
+    padding: 2rem 0 1.5rem 3rem; }
+  .show-popup_messages .message_icon {
+    fill: var(--color-grey-light-3);
+    height: 6rem;
+    width: 6rem;
+    margin-bottom: 2px; }
+  .show-popup_messages .message_head {
+    font-size: 2.2rem; }
+  .show-popup_messages .message_info {
+    color: var(--color-grey-light-4); }
+  .show-popup_messages .user-links {
+    list-style: none;
+    margin: .5rem 0; }
+    .show-popup_messages .user-links .user-item {
+      text-decoration: none;
+      color: var(--color-grey-light-1);
+      display: flex;
+      margin-bottom: .2rem;
+      padding: 1px 0rem;
+      position: relative;
+      transition: all .2s; }
+    .show-popup_messages .user-links .user-item:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 3px;
+      background-color: var(--color-primary);
+      transform: scaleY(0);
+      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s; }
+    .show-popup_messages .user-links .user-item:hover {
+      transform: translateX(20px);
+      animation: pulsate 1s infinite; }
+    .show-popup_messages .user-links .user-item:hover::before {
+      transform: scaleY(1);
+      width: 100%; }
+    .show-popup_messages .user-links .user-link:link,
+    .show-popup_messages .user-links .user-link:visited {
+      color: var(--color-grey-light-1);
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      padding: 1.5rem 3rem;
+      position: relative;
+      z-index: 10;
+      display: flex;
+      align-items: center; }
+
 .user-nav_user {
   transition: all .1s; }
 
-.user-nav_user:hover {
+.user-nav > .user-nav_user:hover *.show-popup {
+  display: block;
   opacity: 1;
-  background-color: blue; }
-  .user-nav_user:hover .popup_pop {
-    opacity: 1; }
+  visibility: visible;
+  transition: all .6s;
+  top: 100%;
+  right: 1%; }
 
-.popup_pop {
-  font-size: 2rem;
+.show-popup {
+  color: var(--color-grey-light-1);
+  width: 30%;
+  font-size: 1.3rem;
   font-weight: 600;
-  opacity: 1; }
+  background-color: var(--color-grey-dark-1);
+  position: absolute;
+  top: 90%;
+  right: 0%;
+  z-index: 1000;
+  cursor: default;
+  box-shadow: var(--shadow-dark);
+  opacity: 0;
+  visibility: hidden; }
+  .show-popup_user {
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 2rem 0 1.5rem 3rem;
+    border-bottom: var(--line); }
+    .show-popup_user--photo {
+      height: 6.5rem;
+      width: 6.5rem;
+      border-radius: 100px;
+      margin-right: 2rem;
+      border: 3px solid var(--color-grey-light-1); }
+  .show-popup_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .show-popup_details .user_name {
+      font-size: 2.2rem;
+      font-weight: 600; }
+    .show-popup_details .user_email {
+      letter-spacing: .5px; }
+  .show-popup .user-links {
+    list-style: none;
+    margin-bottom: 1rem; }
+    .show-popup .user-links .user-item {
+      text-decoration: none;
+      color: var(--color-grey-light-1);
+      display: flex;
+      margin-bottom: .2rem;
+      padding: 1px 0rem;
+      position: relative;
+      transition: all .2s; }
+    .show-popup .user-links .user-item:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 3px;
+      background-color: var(--color-primary);
+      transform: scaleY(0);
+      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s; }
+    .show-popup .user-links .user-item:hover {
+      transform: translateX(20px);
+      animation: pulsate 1s infinite; }
+    .show-popup .user-links .user-item:hover::before {
+      transform: scaleY(1);
+      width: 100%; }
+    .show-popup .user-links .user-link:link,
+    .show-popup .user-links .user-link:visited {
+      color: var(--color-grey-light-1);
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      padding: 1.5rem 3rem;
+      position: relative;
+      z-index: 10;
+      display: flex;
+      align-items: center; }

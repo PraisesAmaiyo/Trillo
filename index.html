@@ -40,12 +40,78 @@
               <use xlink:href="img/sprite.svg#icon-chat"></use>
             </svg>
             <span class="user-nav_notification">13</span>
+
+            <div class="show-popup_messages">
+              <div class="show-popup_messages_user">
+                <svg class="message_icon">
+                  <use xlink:href="img/sprite.svg#icon-chat"></use>
+                </svg>
+                <div class="show-popup__messages_details">
+                  <div class="message_head">Messages.</div>
+                  <span class="message_info"
+                    >You have 13 unread messages...</span
+                  >
+                </div>
+              </div>
+
+              <nav class="user-popup">
+                <ul class="user-links">
+                  <li class="user-item">
+                    <a href="#" class="user-link">Open inbox</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
+
           <div class="user-nav_user">
             <img src="img/userr.png" alt="User photo" class="user-nav_photo" />
             <span class="user-nav_name">Praises</span>
+
+            <div class="show-popup">
+              <div class="show-popup_user">
+                <div class="show-popup_photo">
+                  <img
+                    src="img/userr.png"
+                    alt="User photo"
+                    class="show-popup_user--photo"
+                  />
+                </div>
+                <div class="show-popup_details">
+                  <span class="user_name">Praises Amaiyo</span>
+                  <span class="user_email">amaiyo.praises@gmail.com</span>
+                </div>
+              </div>
+
+              <nav class="user-popup">
+                <ul class="user-links">
+                  <li class="user-item">
+                    <a href="#" class="user-link">My Bookings</a>
+                  </li>
+                  <li class="user-item">
+                    <a href="#" class="user-link">Wishlist</a>
+                  </li>
+                  <li class="user-item">
+                    <a href="#" class="user-link">Account settings</a>
+                  </li>
+                  <li class="user-item">
+                    <a href="#" class="user-link">Payment history</a>
+                  </li>
+                  <li class="user-item">
+                    <a href="#" class="user-link">Support & Feedback</a>
+                  </li>
+                  <li class="user-item">
+                    <a href="#" class="user-link">Logout</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
       </header>
 
       <div class="content">
@@ -244,11 +310,6 @@
             </button>
           </div>
         </main>
-      </div>
-      <div class="popup">
-        <p class="popup_pop">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        </p>
       </div>
     </div>
   </body>
