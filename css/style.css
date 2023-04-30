@@ -289,11 +289,16 @@ body {
     padding: 1.5rem 3rem; }
     @media only screen and (max-width: 37.5em) {
       .overview_heading {
-        font-size: 1.8rem;
-        padding: 1.25rem 2rem; } }
+        font-size: 1.5rem;
+        padding: 1.25rem 1rem; } }
   .overview_stars {
     margin-right: auto;
     display: flex; }
+    @media only screen and (max-width: 37.5em) {
+      .overview_stars {
+        height: 4rem;
+        width: 4rem;
+        align-items: center; } }
   .overview_icon-star, .overview_icon-location {
     width: 1.75rem;
     height: 1.75rem;
@@ -316,7 +321,8 @@ body {
     flex-direction: column; }
     @media only screen and (max-width: 37.5em) {
       .overview_rating {
-        padding: 0 1.5rem; } }
+        padding: 0 1.5rem;
+        margin-left: 1.5rem; } }
   .overview_rating-average {
     font-size: 2.25rem;
     font-weight: 300;
@@ -374,6 +380,9 @@ body {
   border-bottom: var(--line);
   display: flex;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 37.5em) {
+    .list {
+      font-size: 1.2rem; } }
   .list_item {
     flex: 0 0 50%;
     margin-bottom: .7rem; }
@@ -471,6 +480,9 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 2.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .cta_book-now {
+        font-size: 1.5rem; } }
 
 .btn {
   font-size: 1.5rem;
@@ -532,7 +544,11 @@ header {
   cursor: default;
   box-shadow: var(--shadow-dark); }
   .show-popup_messages_user {
-    padding: 2rem 0 1.5rem 3rem; }
+    font-size: 1.5rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .show-popup_messages_user {
+        padding: 1rem 1rem 1rem 1rem; } }
   .show-popup_messages .message_icon {
     fill: var(--color-grey-light-3);
     height: 6rem;
@@ -542,17 +558,23 @@ header {
       .show-popup_messages .message_icon {
         height: 3rem;
         width: 3rem;
-        margin-bottom: 1rem; } }
+        margin-bottom: 1px; } }
   .show-popup_messages .message_head {
     font-size: 2.2rem; }
     @media only screen and (max-width: 56.25em) {
       .show-popup_messages .message_head {
-        font-size: 2rem; } }
+        font-size: 1.5rem; } }
   .show-popup_messages .message_info {
     color: var(--color-grey-light-4); }
+    @media only screen and (max-width: 56.25em) {
+      .show-popup_messages .message_info {
+        font-size: 1rem; } }
   .show-popup_messages .user-links {
     list-style: none;
     margin: .5rem 0; }
+    @media only screen and (max-width: 56.25em) {
+      .show-popup_messages .user-links {
+        margin: 0 0 .5rem 0; } }
     .show-popup_messages .user-links .user-item {
       text-decoration: none;
       color: var(--color-grey-light-1);
@@ -561,6 +583,11 @@ header {
       padding: 1px 0rem;
       position: relative;
       transition: all .2s; }
+      @media only screen and (max-width: 56.25em) {
+        .show-popup_messages .user-links .user-item {
+          font-size: 1.5rem;
+          margin-bottom: .1rem;
+          padding: .5px 0rem; } }
     .show-popup_messages .user-links .user-item:before {
       content: "";
       position: absolute;
@@ -597,7 +624,7 @@ header {
   opacity: 1;
   visibility: visible;
   transition: all .6s;
-  top: 100%;
+  top: 99%;
   right: 1%; }
 
 .show-popup {
@@ -626,8 +653,8 @@ header {
     @media only screen and (max-width: 56.25em) {
       .show-popup_user {
         flex-direction: column;
-        margin-bottom: 1rem;
-        padding: 1.5rem 1rem 1rem 1.5rem;
+        margin-bottom: 0rem;
+        padding: 1.5rem 1rem 1.5rem 1rem;
         align-items: center; } }
     .show-popup_user--photo {
       height: 6.5rem;
@@ -663,6 +690,11 @@ header {
       padding: 1px 0rem;
       position: relative;
       transition: all .2s; }
+      @media only screen and (max-width: 56.25em) {
+        .show-popup .user-links .user-item {
+          font-size: 1rem;
+          margin-bottom: .1rem;
+          padding: 1px 0rem; } }
     .show-popup .user-links .user-item:before {
       content: "";
       position: absolute;
