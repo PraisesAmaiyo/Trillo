@@ -508,7 +508,8 @@ body {
 header {
   position: relative; }
 
-.user-nav > .user-nav_icon-box:hover *.show-popup_messages {
+.user-nav > .user-nav_icon-box:hover *.show-popup_messages,
+.user-nav > .user-nav_icon-box:active *.show-popup_messages {
   display: block;
   top: 100%;
   right: -200%;
@@ -537,6 +538,9 @@ header {
     height: 6rem;
     width: 6rem;
     margin-bottom: 2px; }
+    @media only screen and (max-width: 68.75em) {
+      .show-popup_messages .message_icon {
+        font-size: 50%; } }
   .show-popup_messages .message_head {
     font-size: 2.2rem; }
   .show-popup_messages .message_info {

@@ -625,7 +625,8 @@ header {
     position: relative;
 }
 
-.user-nav>.user-nav_icon-box:hover *.show-popup_messages {
+.user-nav>.user-nav_icon-box:hover *.show-popup_messages,
+.user-nav>.user-nav_icon-box:active *.show-popup_messages {
     display: block;
     top: 100%;
     right: -200%;
@@ -658,6 +659,10 @@ header {
         height: 6rem;
         width: 6rem;
         margin-bottom: 2px;
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 50%;
+        }
     }
 
     .message_head {
