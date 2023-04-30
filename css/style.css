@@ -127,7 +127,7 @@ body {
   justify-content: center; }
   @media only screen and (max-width: 31.25em) {
     .search {
-      order: 1;
+      order: -1;
       flex: 0 0 100%;
       background-color: var(--color-grey-light-2); } }
   .search_input {
@@ -538,11 +538,16 @@ header {
     height: 6rem;
     width: 6rem;
     margin-bottom: 2px; }
-    @media only screen and (max-width: 68.75em) {
+    @media only screen and (max-width: 56.25em) {
       .show-popup_messages .message_icon {
-        font-size: 50%; } }
+        height: 3rem;
+        width: 3rem;
+        margin-bottom: 1rem; } }
   .show-popup_messages .message_head {
     font-size: 2.2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .show-popup_messages .message_head {
+        font-size: 2rem; } }
   .show-popup_messages .message_info {
     color: var(--color-grey-light-4); }
   .show-popup_messages .user-links {
@@ -609,17 +614,32 @@ header {
   box-shadow: var(--shadow-dark);
   opacity: 0;
   visibility: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    .show-popup {
+      font-size: 1rem;
+      width: max-content; } }
   .show-popup_user {
     display: flex;
     margin-bottom: 1rem;
     padding: 2rem 0 1.5rem 3rem;
     border-bottom: var(--line); }
+    @media only screen and (max-width: 56.25em) {
+      .show-popup_user {
+        flex-direction: column;
+        margin-bottom: 1rem;
+        padding: 1.5rem 1rem 1rem 1.5rem;
+        align-items: center; } }
     .show-popup_user--photo {
       height: 6.5rem;
       width: 6.5rem;
       border-radius: 100px;
       margin-right: 2rem;
       border: 3px solid var(--color-grey-light-1); }
+      @media only screen and (max-width: 56.25em) {
+        .show-popup_user--photo {
+          height: 5rem;
+          width: 5rem;
+          margin-right: 0; } }
   .show-popup_details {
     display: flex;
     flex-direction: column;
@@ -627,6 +647,9 @@ header {
     .show-popup_details .user_name {
       font-size: 2.2rem;
       font-weight: 600; }
+      @media only screen and (max-width: 37.5em) {
+        .show-popup_details .user_name {
+          font-size: 1.5rem; } }
     .show-popup_details .user_email {
       letter-spacing: .5px; }
   .show-popup .user-links {

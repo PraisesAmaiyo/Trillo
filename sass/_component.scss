@@ -17,7 +17,7 @@
     justify-content: center;
 
     @media only screen and (max-width: $bp-smallest) {
-        order: 1;
+        order: -1;
         flex: 0 0 100%;
         background-color: var(--color-grey-light-2);
     }
@@ -660,13 +660,20 @@ header {
         width: 6rem;
         margin-bottom: 2px;
 
-        @media only screen and (max-width: $bp-large) {
-            font-size: 50%;
+        @media only screen and (max-width: $bp-medium) {
+            height: 3rem;
+            width: 3rem;
+            margin-bottom: 1rem;
+
         }
     }
 
     .message_head {
         font-size: 2.2rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2rem;
+        }
     }
 
     .message_details {}
@@ -765,6 +772,11 @@ header {
     opacity: 0;
     visibility: hidden;
 
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 1rem;
+        width: max-content;
+    }
+
 
 
     &_user {
@@ -773,12 +785,25 @@ header {
         padding: 2rem 0 1.5rem 3rem;
         border-bottom: var(--line);
 
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+            margin-bottom: 1rem;
+            padding: 1.5rem 1rem 1rem 1.5rem;
+            align-items: center;
+        }
+
         &--photo {
             height: 6.5rem;
             width: 6.5rem;
             border-radius: 100px;
             margin-right: 2rem;
             border: 3px solid var(--color-grey-light-1);
+
+            @media only screen and (max-width: $bp-medium) {
+                height: 5rem;
+                width: 5rem;
+                margin-right: 0;
+            }
         }
     }
 
@@ -790,6 +815,10 @@ header {
         .user_name {
             font-size: 2.2rem;
             font-weight: 600;
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 1.5rem;
+            }
         }
 
         .user_email {
